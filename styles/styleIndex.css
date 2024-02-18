@@ -1,5 +1,138 @@
 /* estilo principal do site pessoa */
 
-#main{
-    background-image: url(./imagens/index.jpg);
+
+
+:root{
+
+    /* cor de fundo da body */
+    --cor_primaria:rgb(187, 165, 132);
+
+    /* cor de fundo da header e footer */
+    --cor_segundaria:#8b5942;
+    /* toda fonte tera essa cor padrão */
+    --cor_terciaria:white;
+    
+/*     
+    --fonte_primaria:"Krona One", sans-serif;
+    --fonte_segundaria:"Montserrat",sans-serif; */
+    
+    
+    --tamanho_fonte_do_titulo: 2rem;
+    --tamanho_fonte_do_paragrafo: 1rem;
+    
+    
+
+
+}
+
+
+
+
+h1,h2{
+    font-size: var(--tamanho_fonte_do_titulo);
+    word-break: break-word;
+}
+p{
+    word-break: break-all;
+    font-size: var(--tamanho_fonte_do_paragrafo);
+}
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+body{
+    
+    background-color: var(--cor_primaria);
+    color: var(--cor_terciaria);
+    gap: 10%;
+}
+
+header{
+    padding: 2% 30% 2% 50%;
+    nav{
+        display: none;
+        justify-content: space-between;
+    
+    }
+    
+
+}
+
+
+
+header:hover{
+    
+    background-color: var(--cor_segundaria);
+    padding: 4% 40% 4% 40%;
+    transition: 1s ;
+  
+
+    nav{
+        display: flex;
+        transition: 1s ;
+    };
+    img{
+        display: none;
+    }
+   
+   
+    
+
+  } 
+
+
+  
+  
+
+
+main{
+        /* |  ^   >   v   < */
+    padding: 5% 10% 5% 10%;
+    display: flex;
+    gap: 10%;
+    
+    
+  
+
+     
+}
+.conteudosFlex{
+    width: 50%;
+}
+
+
+
+footer{
+    background-color: var(--cor_segundaria);
+    
+    padding: 2% 5% 1% 5%; 
+    
+    position: fixed;
+  
+    bottom: 0%;
+    width: 100%;
+}
+
+
+
+
+
+@media (max-width: 820px){
+    main{
+       flex-direction: column;
+       row-gap: 30px;
+       
+    }
+    .conteudosFlex{
+        width: 100%;
+        
+    }
+
 }
