@@ -18,6 +18,7 @@
     
     
     --tamanho_fonte_do_titulo: 2rem;
+    --tamanho_fonte_do_titulo2: 1.2rem;
     --tamanho_fonte_do_paragrafo: 1rem;
     
     
@@ -25,11 +26,12 @@
 
 }
 
-
-
+.FonteTitulo{
+    font-size: var(--tamanho_fonte_do_titulo);
+}
 
 h1,h2{
-    font-size: var(--tamanho_fonte_do_titulo);
+    font-size: var(--tamanho_fonte_do_titulo2);
     word-break: break-word;
 }
 p{
@@ -105,6 +107,8 @@ main{
 }
 .conteudosFlex{
     width: 50%;
+
+
 }
 
 
