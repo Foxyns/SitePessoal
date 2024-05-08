@@ -12,35 +12,15 @@
     /* toda fonte tera essa cor padrão */
     --cor_terciaria:#FFD0EC;
     
-/*     
-    --fonte_primaria:"Krona One", sans-serif;
-    --fonte_segundaria:"Montserrat",sans-serif; */
     
-    
+   
     --tamanho_fonte_do_titulo: 2rem;
-    --tamanho_fonte_do_titulo2: 1.2rem;
     --tamanho_fonte_do_paragrafo: 1rem;
     
     
 
 
 }
-
-.FonteTitulo{
-    font-size: var(--tamanho_fonte_do_titulo);
-}
-
-h1,h2{
-    font-size: var(--tamanho_fonte_do_titulo2);
-    word-break: break-word;
-}
-p{
-    word-break: break-all;
-    font-size: var(--tamanho_fonte_do_paragrafo);
-}
-
-
-
 
 
 *{
@@ -49,6 +29,14 @@ p{
     box-sizing: border-box;  
 }
 
+
+
+
+
+
+
+
+
 body{
     
     background-color: var(--cor_primaria);
@@ -56,46 +44,18 @@ body{
     gap: 10%;
 }
 
-/* header{
-    padding: 2% 30% 2% 50%;
-    nav{
-        display: none;
-        justify-content: space-between;
-    
-    }
-    
-
+h1,h2{
+    font-size: var(--tamanho_fonte_do_titulo);
+    word-break: break-word;
+}
+p{
+    word-break: break-all;
+    font-size: var(--tamanho_fonte_do_paragrafo);
 }
 
 
-
-header:hover{
-    
-    background-color: var(--cor_segundaria);
-    padding: 4% 40% 4% 40%;
-    transition: 1s ;
-  
-
-    nav{
-        display: flex;
-        transition: 1s ;
-    };
-    img{
-        display: none;
-    }
-   
-   
-    
-
-}  */
-
-
-  
-  
-
-
 main{
-        /* |  ^   >   v   < */
+ 
     padding: 5% 10% 5% 10%;
     display: flex;
     flex-direction: column;
@@ -105,25 +65,12 @@ main{
  
      
 }
-img{
-    border-radius: 8%;
-    width: 300px;
-    height: 500px;
-    
-} 
-
-
-.lado{
-    display: flex;
-    flex-direction: row;
-    gap: 3%;
-}
 
 
 footer{
     background-color: var(--cor_segundaria);
     
-    /* padding: 2% 5% 1% 5%;  */
+    
     padding: 0.5% 0 3% 10%;
     position: fixed;
   
@@ -143,10 +90,5 @@ footer{
        
     }
   
-    .lado{
-       
-        flex-direction: column;
-        
-    }
-
+ 
 }
