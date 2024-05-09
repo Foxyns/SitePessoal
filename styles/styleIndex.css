@@ -43,7 +43,7 @@ div.paragrafo.parallax {
     display: flex;
     flex-direction: column;
     
-    justify-content: space-around;
+    justify-content: center;
     position: relative;
     overflow: hidden;
     
@@ -79,7 +79,7 @@ div.paragrafo.parallax:after {
 
 div.paragrafo_transparente {
 
-    padding: 0 20%;
+    padding: 5% 20%;
     background-color: var(--cor_fotter_parallax);
     font-size: var(--tamanho_paragrafos);
     opacity: 65%;
@@ -135,18 +135,57 @@ footer {
     h3,
     h4,
     h5 {
-        font-size: 4rem;
+        font-size: 5rem;
         font-weight: 500;
        
     
     }
     
 
-   
+    div.paragrafo.parallax{
+        justify-content: space-around;
+    }
 
 
     div.paragrafo_transparente {
         padding: 5%;
+        
+        
+       
+
+       
+    }
+}
+@media (max-width: 400x) {
+
+
+    body{
+        
+        font-weight: 200;
+       
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-size: 3rem;
+        font-weight: 300;
+       
+    
+    }
+    
+
+    div.paragrafo.parallax{
+        justify-content: space-around;
+        font-size: 0.8rem;
+    }
+
+
+    div.paragrafo_transparente {
+        padding: 5%;
+        
         
        
 
