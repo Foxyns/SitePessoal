@@ -26,11 +26,10 @@ body {
     overflow-wrap: break-word;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3, h4 {
+    font-size: var(--tamanho_titulos_parallax);
     font-weight: 700;
-    font-size: var(--tamanho_titulos);
+    text-align: center;
 
 }
 
@@ -43,14 +42,15 @@ p {
 
 main {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
   
 }
 
-div.module.parallax {
+div.paragrafo.parallax {
     
     display: flex;
     flex-direction: column;
+       
     justify-content: center;
     position: relative;
     overflow: hidden;
@@ -64,12 +64,9 @@ div.module.parallax {
 
     height: 100vh !important;
 
-  
-
-    
 }
 
-div.module.parallax:after {
+div.paragrafo.parallax:after {
     content: "";
     height: 100%;
     width: 100%;
@@ -81,53 +78,40 @@ div.module.parallax:after {
     background: -o-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
 }
 
-div.module.parallax_1 {
-    background-image: url("https://gardencollage.wpenginepowered.com/wp-content/uploads/2016/11/14122145262_62552b5059_k-1400x788.jpg");
-
-    a {
-        font-size: var(--tamanho_titulos_parallax);
-        text-align: center;
-       
-    }
-   
-
-}
-
-div.module.parallax_2 {
-    background-image: url("https://wallpapershome.com/images/pages/pic_h/25056.jpeg");
-    h2 {
-        font-size: var(--tamanho_titulos_parallax);
-        text-align: center;
-        
-    }
-}
-
-div.module.parallax_3 {
-    background-image: url("https://i.pinimg.com/originals/b2/13/65/b21365c035ff1cfa52edc492affa885b.jpg");
-    h3 {
-        font-size: var(--tamanho_titulos_parallax);
-        text-align: center;
-        
-    }
-}
-
-div.module.parallax_4 {
-    background-image: url("https://i.pinimg.com/originals/d1/e5/93/d1e593b2de680477a9e0048dda331b0b.png");
-    a {
-        font-size: var(--tamanho_titulos_parallax);
-        text-align: center;
-        
-    }
-}
 
 
 
-div.module.content {
+div.paragrafo_opaco{
     margin: 5% 0;
     padding: 5% 20%;
     background-color: var(--cor_fotter_parallax);  
+
+} div.paragrafo_transparente{
+    
+    padding: 5% 20%;
+    background-color: var(--cor_fotter_parallax);  
+    opacity: 85%;
 }
 
+div.paragrafo.parallax_1 {
+    background-image: url("https://gardencollage.wpenginepowered.com/wp-content/uploads/2016/11/14122145262_62552b5059_k-1400x788.jpg");
+
+}
+
+div.paragrafo.parallax_2 {
+    background-image: url("https://wallpapershome.com/images/pages/pic_h/25056.jpeg");
+    
+}
+
+div.paragrafo.parallax_3 {
+    background-image: url("https://i.pinimg.com/originals/b2/13/65/b21365c035ff1cfa52edc492affa885b.jpg");
+   
+}
+
+div.paragrafo.parallax_4 {
+    background-image: url("https://i.pinimg.com/originals/d1/e5/93/d1e593b2de680477a9e0048dda331b0b.png");
+  
+}
 
 footer {
 
@@ -138,10 +122,12 @@ footer {
 
 
 @media (max-width: 870px) {
-    div.module.content {
+    div.paragrafo.opaco {
+       margin: 20px;
+       padding: 20px;
         
-        padding: 5% 10%;
-        background-color: var(--cor_fotter_parallax);
+    
+    
     }
 
 }
@@ -153,12 +139,12 @@ footer {
 
 
 /* sera util quando for fazer o paralax do certificado */
-/* div.module p{
+/* div.paragrafo p{
     margin-bottom: 40px;
 }
-div.module:last-child{
+div.paragrafo:last-child{
     margin-bottom: 0;
 } */
-/* div.module h1{
+/* div.paragrafo h1{
     font-size: 50px;
 } */
