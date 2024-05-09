@@ -164,15 +164,15 @@ footer {
 
 
     div.paragrafo_fundo_transparente {
-        padding: 10%;
+        padding: 5%;
       
     }
 
     .paragrafo{
-        padding-bottom: 0;
+        padding-bottom: 10%;
      }
 }
-@media (max-width: 580px) {
+@media (max-width: 450px) {
 
 
     body{
