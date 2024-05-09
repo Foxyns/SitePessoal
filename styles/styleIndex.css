@@ -27,6 +27,8 @@ body {
     overflow-wrap: break-word;
 }
 
+
+
 h1,
 h2,
 h3,
@@ -35,8 +37,11 @@ h5 {
     font-size: var(--tamanho_titulos_parallax);
     font-weight: 700;
     text-align: center;
+    
+
 
 }
+
 
 div.paragrafo.parallax {
 
@@ -121,7 +126,7 @@ footer {
 
 
 
-@media (max-width: 870px) {
+@media (max-width: 700px) {
 
 
     body{
@@ -156,7 +161,7 @@ footer {
        
     }
 }
-@media (max-width: 400x) {
+@media (max-width: 300px) {
 
 
     body{
@@ -180,6 +185,7 @@ footer {
     div.paragrafo.parallax{
         justify-content: space-around;
         font-size: 0.8rem;
+
     }
 
 
