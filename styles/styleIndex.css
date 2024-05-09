@@ -9,15 +9,15 @@
 
 
     --tamanho_titulos: 2rem;
-    --tamanho_titulos_parallax: 7rem;
+    --tamanho_titulos_parallax: 4rem;
     --tamanho_paragrafos: 1rem;
 
 }
 
 body {
-    box-sizing: border-box;
     
-    margin: 0 auto;
+    
+    margin: 0 ;
     padding: 0;
     background-color: var(--cor_body);
     color: var(--cor_fonte);
@@ -27,6 +27,14 @@ body {
     overflow-wrap: break-word;
 }
 
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    
+}
 
 
 h1,
@@ -52,7 +60,7 @@ div.paragrafo.parallax {
     position: relative;
     overflow: hidden;
     
-
+    text-align: justify;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -82,12 +90,14 @@ div.paragrafo.parallax:after {
 
 
 
-div.paragrafo_transparente {
-
+div.paragrafo_fundo_transparente {
+    
+    
     padding: 5% 20%;
     background-color: var(--cor_fotter_parallax);
     font-size: var(--tamanho_paragrafos);
     opacity: 65%;
+    
     
 
 
@@ -95,7 +105,7 @@ div.paragrafo_transparente {
 
 div.paragrafo.parallax_1 {
     background-image: url("https://i.pinimg.com/originals/49/f4/16/49f416a4d35244412c69cf7113bc27ba.gif");
-
+    
 }
 
 div.paragrafo.parallax_2 {
@@ -126,7 +136,7 @@ footer {
 
 
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
 
 
     body{
@@ -140,7 +150,7 @@ footer {
     h3,
     h4,
     h5 {
-        font-size: 5rem;
+        font-size: 2rem;
         font-weight: 500;
        
     
@@ -149,19 +159,20 @@ footer {
 
     div.paragrafo.parallax{
         justify-content: space-around;
+
     }
 
 
-    div.paragrafo_transparente {
-        padding: 5%;
-        
-        
-       
-
-       
+    div.paragrafo_fundo_transparente {
+        padding: 10%;
+      
     }
+
+    .paragrafo{
+        padding-bottom: 0;
+     }
 }
-@media (max-width: 300px) {
+@media (max-width: 580px) {
 
 
     body{
@@ -175,8 +186,8 @@ footer {
     h3,
     h4,
     h5 {
-        font-size: 3rem;
-        font-weight: 300;
+        font-size: 1rem;
+        font-weight: 400;
        
     
     }
@@ -184,19 +195,21 @@ footer {
 
     div.paragrafo.parallax{
         justify-content: space-around;
-        font-size: 0.8rem;
+        font-size: 1rem;
+        
 
     }
 
 
-    div.paragrafo_transparente {
-        padding: 5%;
-        
-        
-       
-
-       
+    div.paragrafo_fundo_transparente {
+        padding: 5% ;
+     
     }
+
+    .paragrafo{
+        padding-bottom: 35%;
+     }
+    
 }
 
 
