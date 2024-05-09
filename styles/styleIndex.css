@@ -1,13 +1,13 @@
 :root {
     /* cor primaria */
-    --cor_body: #012340;
+    --cor_body: #C9C942;
     /* cor secundaria */
-    --cor_fotter_parallax: #025939;
+    --cor_fotter_parallax: black;
     /* toda fonte tera essa cor padrão */
     --cor_fonte: white;
 
 
-    
+
     --tamanho_titulos: 2rem;
     --tamanho_titulos_parallax: 7rem;
     --tamanho_paragrafos: 1rem;
@@ -16,45 +16,37 @@
 
 body {
     box-sizing: border-box;
-    width: 100%;
+    
     margin: 0 auto;
     padding: 0;
     background-color: var(--cor_body);
     color: var(--cor_fonte);
     font-family: sans-serif;
+    font-weight: 600;
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-size: var(--tamanho_titulos_parallax);
     font-weight: 700;
     text-align: center;
 
 }
 
-p {
-
-    text-align: justify;
-    font-size: var(--tamanho_paragrafos);
-}
-
-
-main {
-    display: flex;
-    flex-direction: column;    
-  
-}
-
 div.paragrafo.parallax {
-    
+
     display: flex;
     flex-direction: column;
-       
+
     justify-content: center;
     position: relative;
     overflow: hidden;
-    background-position: 50%;
+
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -64,6 +56,7 @@ div.paragrafo.parallax {
 
     height: 100vh !important;
 
+
 }
 
 div.paragrafo.parallax:after {
@@ -72,25 +65,26 @@ div.paragrafo.parallax:after {
     width: 100%;
     position: absolute;
     z-index: 8;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
-    background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
-    background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
-    background: -o-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 90%, #000 100%);
+    background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 90%, #000 100%);
+    background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 90%, #000 100%);
+    background: -o-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 90%, #000 100%);
 }
 
 
 
 
-div.paragrafo_opaco{
-    margin: 5% 0;
-    padding: 5% 20%;
-    background-color: var(--cor_fotter_parallax);  
 
-} div.paragrafo_transparente{
-    
-    padding: 5% 20%;
-    background-color: var(--cor_fotter_parallax);  
-    opacity: 85%;
+
+div.paragrafo_transparente {
+
+    padding: 0 20%;
+    background-color: var(--cor_fotter_parallax);
+    font-size: var(--tamanho_paragrafos);
+    opacity: 65%;
+
+
+
 }
 
 div.paragrafo.parallax_1 {
@@ -99,18 +93,23 @@ div.paragrafo.parallax_1 {
 }
 
 div.paragrafo.parallax_2 {
-    background-image: url("https://wallpapershome.com/images/pages/pic_h/25056.jpeg");
-    
+    background-image: url("https://i.pinimg.com/originals/a4/7d/6f/a47d6f4183ca934e43fb8a2ab4387c3c.png");
+
 }
 
 div.paragrafo.parallax_3 {
-    background-image: url("https://i.pinimg.com/originals/b2/13/65/b21365c035ff1cfa52edc492affa885b.jpg");
-   
+    background-image: url("https://wallpapershome.com/images/pages/pic_h/25056.jpeg");
+
 }
 
 div.paragrafo.parallax_4 {
+    background-image: url("https://i.pinimg.com/originals/b2/13/65/b21365c035ff1cfa52edc492affa885b.jpg");
+
+}
+
+div.paragrafo.parallax_5 {
     background-image: url("https://i.pinimg.com/originals/d1/e5/93/d1e593b2de680477a9e0048dda331b0b.png");
-  
+
 }
 
 footer {
@@ -123,11 +122,11 @@ footer {
 
 @media (max-width: 870px) {
     div.paragrafo.opaco {
-       margin: 20px;
-       padding: 20px;
-        
-    
-    
+        margin: 20px;
+        padding: 20px;
+
+
+
     }
 
 }
