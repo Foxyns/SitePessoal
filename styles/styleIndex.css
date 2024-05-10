@@ -9,7 +9,7 @@
 
 
     --tamanho_titulos: 2rem;
-    --tamanho_titulos_parallax: 4rem;
+    --tamanho_titulos_parallax: 3rem;
     --tamanho_paragrafos: 1rem;
 
 }
@@ -28,13 +28,13 @@ body {
 }
 
 
-main{
+/* main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
     
-}
+} */
 
 
 h1,
@@ -159,25 +159,24 @@ footer {
 
     div.paragrafo.parallax{
         justify-content: space-around;
+        text-align: justify;
 
     }
 
 
     div.paragrafo_fundo_transparente {
         padding: 5%;
-      
+        padding-bottom: 100%;
     }
 
-    .paragrafo{
-        padding-bottom: 10%;
-     }
+   
 }
 @media (max-width: 450px) {
 
 
     body{
         
-        font-weight: 200;
+        font-weight: 400;
        
     }
 
@@ -191,24 +190,8 @@ footer {
        
     
     }
+
     
-
-    div.paragrafo.parallax{
-        justify-content: space-around;
-        font-size: 1rem;
-        
-
-    }
-
-
-    div.paragrafo_fundo_transparente {
-        padding: 5% ;
-     
-    }
-
-    .paragrafo{
-        padding-bottom: 35%;
-     }
     
 }
 
