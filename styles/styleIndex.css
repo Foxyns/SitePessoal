@@ -39,9 +39,14 @@ h5 {
     font-weight: 500;
     text-align: center;
     
+    
 
 
 }
+
+/* .expandido{
+    height: 100vh !important;
+} */
 
 
 div.paragrafo.parallax {
@@ -60,8 +65,8 @@ div.paragrafo.parallax {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-
-    height: 100vh !important;
+    /* height: 100vh !important; */
+    
 
 
 }
@@ -99,17 +104,17 @@ div.paragrafo_fundo_transparente {
 
 div.paragrafo.parallax_1 {
     background-image: url("https://i.pinimg.com/originals/49/f4/16/49f416a4d35244412c69cf7113bc27ba.gif");
-    
+    height: 100vh !important;
 }
 
 div.paragrafo.parallax_2 {
     background-image: url("https://i.pinimg.com/originals/a4/7d/6f/a47d6f4183ca934e43fb8a2ab4387c3c.png");
-
+    
 }
 
 div.paragrafo.parallax_3 {
     background-image: url("https://i.pinimg.com/originals/ac/08/fb/ac08fbee7cb8b38afa9ceeaa0e4dd1c4.gif");
-
+    
 }
 
 div.paragrafo.parallax_4 {
@@ -121,12 +126,6 @@ div.paragrafo.parallax_5 {
     background-image: url("https://i.pinimg.com/originals/d1/e5/93/d1e593b2de680477a9e0048dda331b0b.png");
 
 }
-
-/* footer {
-
-    padding: 2% 10%;
-    text-align-last: center;
-} */
 
 
 
@@ -176,7 +175,7 @@ div.paragrafo.parallax_5 {
        
     
     }
-
+   
 
     div.paragrafo.parallax:after {
         
