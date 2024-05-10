@@ -68,8 +68,9 @@ div.paragrafo.parallax {
 
 div.paragrafo.parallax:after {
     content: "";
-    /* height: 100%;
-    width: 100%; */
+    /* altura do sombreamento da imagem de fundo */
+    height: 100%;
+    width: 100%;
     position: absolute;
     z-index: 8;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 90%, #000 100%);
@@ -121,11 +122,11 @@ div.paragrafo.parallax_5 {
 
 }
 
-footer {
+/* footer {
 
     padding: 2% 10%;
     text-align-last: center;
-}
+} */
 
 
 
@@ -154,8 +155,8 @@ footer {
 
 
     div.paragrafo_fundo_transparente {
-        padding: 5% 20%;
-        padding-bottom: 100%;
+        padding: 5% 10%;
+        
     }
 
    
@@ -176,6 +177,18 @@ footer {
     
     }
 
+
+    div.paragrafo.parallax:after {
+        
+        /* altura do sombreamento da imagem de fundo */
+        height: 0;
+        width: 0;
+    }
+
+    div.paragrafo_fundo_transparente {
+        padding: 5%  10%;
+      
+    }
     
     
 }
