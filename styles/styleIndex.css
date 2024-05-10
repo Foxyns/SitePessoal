@@ -38,27 +38,19 @@ h5 {
     font-size: var(--tamanho_titulos_parallax);
     font-weight: 500;
     text-align: center;
-    
-    
-
-
+  
 }
-
-/* .expandido{
-    height: 100vh !important;
-} */
-
 
 div.paragrafo.parallax {
 
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    text-align: justify;
     
-    justify-content: center;
+    
     position: relative;
     overflow: hidden;
-    
-    text-align: justify;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -124,7 +116,7 @@ div.paragrafo.parallax_4 {
 
 div.paragrafo.parallax_5 {
     background-image: url("https://i.pinimg.com/originals/d1/e5/93/d1e593b2de680477a9e0048dda331b0b.png");
-
+    height: 100vh !important;
 }
 
 
@@ -146,11 +138,7 @@ div.paragrafo.parallax_5 {
         font-size: 2rem;
     
     }
-    div.paragrafo.parallax{
-        justify-content: space-around;
-        text-align: justify;
-
-    }
+   
 
 
     div.paragrafo_fundo_transparente {
@@ -177,12 +165,6 @@ div.paragrafo.parallax_5 {
     }
    
 
-    div.paragrafo.parallax:after {
-        
-        /* altura do sombreamento da imagem de fundo */
-        height: 0;
-        width: 0;
-    }
 
     div.paragrafo_fundo_transparente {
         padding: 5%  10%;
@@ -197,14 +179,3 @@ div.paragrafo.parallax_5 {
 
 
 
-
-/* sera util quando for fazer o paralax do certificado */
-/* div.paragrafo p{
-    margin-bottom: 40px;
-}
-div.paragrafo:last-child{
-    margin-bottom: 0;
-} */
-/* div.paragrafo h1{
-    font-size: 50px;
-} */
